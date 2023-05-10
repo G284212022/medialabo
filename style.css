@@ -1,0 +1,22 @@
+h1 {
+    color: white;
+	background-color: #746d82;
+}
+
+h2 {
+    color: white;
+    text-shadow: 2px 2px 3px #48454d;
+}
+
+div {
+
+}
+
+h3 {
+    color: white;
+    background: linear-gradient(0.25turn, #746d82, white);
+}
+
+ul {
+    background: linear-gradient(0.25turn, white, #746d82);
+}
