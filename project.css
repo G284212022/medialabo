@@ -1,0 +1,18 @@
+h1 {
+    color: white;
+	text-shadow: rgb(188, 242, 80) 1px 0 10px;
+}
+
+div {
+    font-size: small;
+    background-color: #b0e9fef6;
+}
+
+th, td {
+    border: solid 3px rgb(197, 245, 181);
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
