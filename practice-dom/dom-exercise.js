@@ -20,7 +20,27 @@ p.textContent = '写真表と都市の経度緯度のページです';
 h2.insertAdjacentElement('afterend', p);
 p.style.cssText = 'text-emhasis:sesame grren';
 // 練習4-3 写真表作成プログラム
-let h21 = document.querySelector('div#phototable');
+let div = document.querySelector('div#phototable');
+
+let taro = document.createElement('img');
+taro.setAttribute('scr','taro.png');
+let tarop = document.createElement('p');
+tarop.insertAdjacentElement('beforeend',taro);
+div.insertAdjacentElement('beforeend',tarop);
+
+let jiro = document.createElement('img');
+taro.setAttribute('scr','jiro.png');
+let jirop = document.createElement('p');
+jirop.insertAdjacentElement('beforeend',jiro);
+div.insertAdjacentElement('beforeend',jirop);
+
+let hanako = document.createElement('img');
+hanako.setAttribute('scr','hanako.png');
+let hanakop = document.createElement('p');
+hanakop.insertAdjacentElement('beforeend',hanako);
+div.insertAdjacentElement('beforeend',hanakop);
+
+
 
 
 
