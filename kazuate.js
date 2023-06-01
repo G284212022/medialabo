@@ -19,7 +19,7 @@ function hantei() {
   kaisu++
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
   let x = document.querySelector('input[name="yosou"]');
-  let yoso = perseInt(x.value);
+  let yoso = parseInt(x.value);
   kaisu = kaisu + 1;
   let kai = document.querySelector('span#kaisu');
   kai = kaisu;
