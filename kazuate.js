@@ -27,7 +27,7 @@ function hantei() {
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
-
+  var re = document.querySelector('span#result');
   console.log(kaisu + '回目の予想:' + yoso);
   if (kaisu > 3) {
     console.log('答えは' + kotae + 'でした.既にゲームは終わっています.');  
@@ -46,4 +46,5 @@ function hantei() {
       console.log('答えは' + kotae + 'でした.既にゲームは終わっています.');
     }
   }
+  document.getElementById('result').textContent = re;
 }

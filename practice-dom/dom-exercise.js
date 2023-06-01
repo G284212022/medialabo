@@ -21,31 +21,30 @@ h2.insertAdjacentElement('afterend', p);
 p.style.textEmphasise = 'sesame grren';
 // 練習4-3 写真表作成プログラム
 let div = document.querySelector('div#phototable');
-
-let taro = document.createElement('img');
-taro.setAttribute('scr','taro.png');
-let tarop = document.createElement('p');
-tarop.insertAdjacentElement('beforeend',taro);
-div.insertAdjacentElement('beforeend',tarop);
-
-let jiro = document.createElement('img');
-taro.setAttribute('scr','jiro.png');
-let jirop = document.createElement('p');
-jirop.insertAdjacentElement('beforeend',jiro);
-div.insertAdjacentElement('beforeend',jirop);
-
-let hanako = document.createElement('img');
-hanako.setAttribute('scr','hanako.png');
-let hanakop = document.createElement('p');
-hanakop.insertAdjacentElement('beforeend',hanako);
-div.insertAdjacentElement('beforeend',hanakop);
-
-
-
-
-
+for(let i = 2;i >= 0 ;i--){ 
+let img = document.createElement('img');
+if(i == 0){
+	img.setAttribute('src', 'taro.png');
+}else if(i == 1){
+	img.setAttribute('src', 'jiro.png');
+}else if(i == 2){
+	img.setAttribute('src', 'hanako.png');
+}
+let p1 = document.createElement('p'); 
+p1.insertAdjacentElement('beforeend', img);
+div.insertAdjacentElement('beforeend',p1); 
+}
 // 練習4-4 箇条書き削除プログラム
+let li = document.querySelectorAll('ul#location > li');
+for(let li2 of li){
+	li2.remove();
+}
 
 
 // 練習4-5 箇条書き追加プログラム
 
+for(let i = 0; i < data.length;i++){
+	let list = document.createElement('li');
+	list.textContent =(`${data[i].name} ・・・ 緯度:${data[i].lat}, 経度:${data[i].lng}`);
+	document.getElementById('location').appendChild(list); 
+}
