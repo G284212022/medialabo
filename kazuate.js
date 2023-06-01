@@ -18,8 +18,8 @@ b1.addEventListener('click',hantei);
 function hantei() {
   kaisu++
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
-  let yoso = document.querySelector('input[answer="yosou"]');
-  let yosou = perseInt(yoso.value);
+  let x = document.querySelector('input[answer="yosou"]');
+  let yoso = perseInt(x.value);
   kaisu = kaisu + 1;
   let kai = document.querySelector('span#kaisu');
   kai = kaisu;
@@ -32,7 +32,6 @@ function hantei() {
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
   var re = document.querySelector('span#result');
-  console.log(kaisu + '回目の予想:' + yoso);
   if (kaisu > 3) {
   re = ('答えは' + kotae + 'でした.既にゲームは終わっています.');  
   } else if (kaisu < 3) {
