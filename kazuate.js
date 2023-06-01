@@ -18,15 +18,15 @@ b1.addEventListener('click',hantei);
 function hantei() {
   kaisu++
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
-  let yoso = document.querySelector('input[answer="yosou"]');
   let yosou = i.value;
+  let yoso = document.querySelector('input[answer="yosou"]');
   kaisu = kaisu + 1;
   let kai = document.querySelector('span#kaisu');
   kai = kaisu;
   document.getElementById('kaisu').textContest = kai;
 
   let ans = document.querySelector('span#answer');
-  ans = yoso;
+  ans = yosou;
   document.getElementById('answer').textContent = ans;
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
