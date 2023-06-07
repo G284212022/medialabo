@@ -3,104 +3,76 @@
   <head>
     <title>世界の天気</title>
     <link rel="stylesheet" href="project.css">
+    <meta charset="utf=8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" defer></script>
+    <script src="project.js" defer></script>
+    
   <body>
     <div>
-      <p>各地域の最高気温、最低気温、平均気温を掲載しています。</p>
+      <p>各地域の最高気温、最低気温を掲載しています。</p>
     <P>※過去の記録から平均を算出したものであり、実際の気温とは異なる可能性があります。</P>
     </div>
     <h1>世界の天気</h1>
 
+    <label for="ID">ID: </label>
+    <input type="text" name="kuni" id="kuni" size="10">
+    <button id="print">検索</button>
+   
+    <p id="result">検索結果を表示します</p>
+
+    <h3>地域</h3>
     <table> 
       <tr>
         <th>ID</th>
         <th>地域</th>
-        <th>最高気温</th>
-        <th>最低気温</th>
-        <th>平均気温</th>
       </tr>
       <tr>
         <td>360630</td>
         <td>Cario カイロ （エジプト）</td>
-        <td>34℃</td>
-        <td>10℃</td>
-        <td>25℃</td>  
       </tr>
       <tr>
         <td>524901</td>
         <td>Moscow モスクワ （ロシア）</td>
-        <td>27℃</td>
-        <td>-90℃</td>
-        <td>6℃</td>
       </tr>
       <tr>
         <td>993800</td>
         <td>Johannesburg ヨハネスブルク （南アフリカ）</td>
-        <td>30℃</td>
-        <td>10℃</td>
-        <td>15℃</td>
       </tr>
       <tr>
         <td>1816670</td>
         <td>Beijing 北京 （中華人民共和国）</td>
-        <td>30℃</td>
-        <td>-９℃</td>
-        <td>18℃</td>
       </tr>
       <tr>
         <td>1850147</td>
         <td>Tokyo 東京 （日本）</td>
-        <td>35℃</td>
-        <td>-7℃</td>
-        <td>3℃</td>
       </tr>
       <tr>
         <td>1880252</td>
         <td>Singapore シンガポール</td>
-        <td>32℃</td>
-        <td>19℃</td>
-        <td>30℃</td>
       </tr>
       <tr>
         <td>2147714</td>
         <td>Sydney シドニー （オーストラリア）</td>
-        <td>26℃</td>
-        <td>13℃</td>
-        <td>18℃</td>
       </tr>
       <tr>
         <td>2643743</td>
         <td>London ロンドン （イギリス）</td>
-        <td>29℃</td>
-        <td>-1℃</td>
-        <td>11℃</td>
       </tr>
       <tr>
         <td>2968815</td>
         <td>Paris パリ （フランス）</td>
-        <td>25℃</td>
-        <td>2℃</td>
-        <td>8℃</td>
       </tr>
       <tr>
         <td>3451189</td>
         <td>Rio de Janeiro リオデジャネイロ （ブラジル）</td>
-        <td>36℃</td>
-        <td>19℃</td>
-        <td>24℃</td>
       </tr>
       <tr>
         <td>5128581</td>
         <td>New York ニューヨーク （アメリカ合衆国）</td>
-        <td></td>
-        <td></td>
-        <td></td>
       </tr>
       <tr>
         <td>5368361</td>
         <td>Los Angeles ロサンゼルス （アメリカ合衆国）</td>
-        <td></td>
-        <td></td>
-        <td></td>
       </tr>
     </table>
       
