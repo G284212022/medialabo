@@ -1,5 +1,5 @@
-let ID = document.querySelector('#print');
- ID.addEventListener('click', sendRequest);
+let c = document.querySelector('#print');
+ c.addEventListener('click', sendRequest);
 
 
 // 通信を開始する処理
@@ -7,7 +7,7 @@ function sendRequest() {
     // URL を設定
     let a = document.querySelector('input[name="kuni"]');
     let b = parseInt(a.value);
-    let url = 'https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js';
+    let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/'+b+'.json';
 
     // 通信開始
     axios.get(url)
@@ -23,7 +23,7 @@ function showResult(resp) {
 
     // data が文字列型なら，オブジェクトに変換する
     if (typeof data === 'string') {
-        data = JSON.parse(data);
+        data = JSON.parse("data");
     }
 
     // data をコンソールに出力
